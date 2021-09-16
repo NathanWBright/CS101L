@@ -25,6 +25,7 @@ print('---- COMP-SCI 101L Grade Calculator ----\n')
 
 name = input('Who are we calculating grades for? ')
 
+#Asks for three different grades, checks to make sure the inputs are within 0 and 100. If they aren't, correct them.
 labGrade = int(input('\nEnter Lab grade: '))
 if labGrade > 100:
     print(labGrade, 'is an invalid grade, and has been reduced to 100.')
@@ -49,10 +50,12 @@ elif attendanceGrade < 0:
     print(attendanceGrade, 'is an invalid grade, and has been increased to 0.')
     attendanceGrade = 0
 
+#Calculates the overall weighted grade from the inputed grades.
 weightedGrade = (labGrade * 0.7) + (examGrade * 0.2) + (attendanceGrade * 0.1)
 #Ensures the weighted grade is only displayed to one decimal place.
 weightedGrade2D = '{:.1f}'.format(weightedGrade)
 
+#Checks if the weighted grade falls within one of the letter grades.
 if weightedGrade >= 90:
     letterGrade = 'A'
 elif weightedGrade >= 80:
