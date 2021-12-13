@@ -5,14 +5,15 @@
 ## Nathan Bright
 ## nwbbdf@umsystem.edu
 ##
-## PROBLEM: Use the turtle module to draw basic shapes.
+## PROBLEM: Create unittests for basic math functions.
 ##
 ## ALGORITHM: 
-##      1. 
-##      2. 
-##      3. 
+##      1. Add a group of numbers and test.
+##      2. Average a group of numbers and test.
+##      3. Find the median of a group of numbers and test.
 ## 
 ## ERROR HANDLING:
+##      1. Raises ValueError if attempting to find the median of an empty list.
 ##      
 ## OTHER COMMENTS:
 ##      
